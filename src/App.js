@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import { fetchTasks, addTask } from './store/tasksSlice';
 import AllTasks from './components/AllTasks'
 import InProgressTasks from './components/InProgressTasks'
