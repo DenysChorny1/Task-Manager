@@ -72,11 +72,11 @@ const Task = ({ task }) => {
             </div>
             <div>
                 <p>Deadline: {task.deadline}</p>
-                <select value={completed} onChange={handleStatusChange} className='form-select'>
-                    <option value={false}>In Progress</option>
-                    <option value={true}>Complete</option>
-                </select>
-                <div className='row m-1 d-flex justify-content-end'>
+                <div className='row m-1 d-flex justify-content-between'>
+                    <select value={completed} onChange={handleStatusChange} className='form-select w-50'>
+                        <option value={false}>In Progress</option>
+                        <option value={true}>Completed</option>
+                    </select>
                     <button onClick={() => setEditingTask(true)} className='col-2 mx-1 btn btn-outline-info'>&#9998;</button>
                     <button onClick={handleDeleteTask} className='col-2 btn btn-outline-danger'>&#10005;</button>
                 </div>

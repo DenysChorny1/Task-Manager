@@ -77,7 +77,7 @@ function App() {
       <div className='container-fluid '>
         <div className='row p-md-5 bg-dark navbar navbar-dark'>
           <h1 className='col-12 text-center p-1 text-white'>Task Manager</h1>
-          <nav className='col-md-2'>
+          <nav className='col-xl-3'>
             <ul className='nav'>
               <li className='nav-item'>
                 <Link className='nav-link' to="/">All</Link>
@@ -97,9 +97,9 @@ function App() {
             handleSearchTermChange={handleSearchTermChange}
             handleSearchDateChange={handleSearchDateChange}
           />
-          <div className='col-md-2 d-flex justify-content-end'>
+          <div className='col-xl-2 d-flex justify-content-end'>
             {!taskModal && (
-                <button className='btn btn-secondary' onClick={() => setTaskModal(true)}>
+                <button className='btn btn-secondary my-1' onClick={() => setTaskModal(true)}>
                   New Task +
                 </button>
               )}

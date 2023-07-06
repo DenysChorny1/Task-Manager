@@ -8,6 +8,12 @@
     z-index: 900;
 }
 .my_modal_content{
-    width: 50%;
+    width: 30%;
     margin: 220px auto;
+}
+@media (max-width: 992px) {
+    .my_modal_content{
+        width: 90%;
+        margin: 40px auto;
+    }
 }
