@@ -49,12 +49,14 @@ const Task = ({ task }) => {
                 type="text"
                 value={updatedTask.title}
                 onChange={(e) => setUpdatedTask({ ...updatedTask, title: e.target.value })}
+                placeholder="Title"
             />
             <input
                 className='form-control my-1'
                 type="text"
                 value={updatedTask.description}
                 onChange={(e) => setUpdatedTask({ ...updatedTask, description: e.target.value })}
+                placeholder="Description"
             />
             <input
                 className='form-control my-1'
